@@ -1,19 +1,13 @@
-baseurl = "http://www.example.com"
-title = "johndoe"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
 
+# Change the default theme to be use when building the site with Hugo
 theme = "hugo-coder"
 
-languagecode = "en"
-defaultcontentlanguage = "en"
-
-paginate = 20
-canonifyurls = true
-
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
-disqusShortname = "yourdiscussshortname"
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
 
 [params]
     author = "John Doe"
@@ -41,6 +35,9 @@ disqusShortname = "yourdiscussshortname"
 
     # Custom CSS
     custom_css = []
+    
+    # Custom JS
+    custom_js = []
 
 [taxonomies]
   category = "categories"
@@ -72,62 +69,3 @@ disqusShortname = "yourdiscussshortname"
     icon = "fab fa-medium"
     weight = 5
     url = "https://medium.com/@johndoe"
-
-
-[languages]
-    [languages.en]
-        languagename = "English"
-
-        [[languages.en.menu.main]]
-        name = "About"
-        weight = 1
-        url = "/about/"
-
-        [[languages.en.menu.main]]
-        name = "Blog"
-        weight = 2
-        url = "/posts/"
-
-        [[languages.en.menu.main]]
-        name = "Projects"
-        weight = 3
-        url = "/projects/"
-
-        [[languages.en.menu.main]]
-        name = "Contact me"
-        weight = 5
-        url = "/contact/"
-
-
-    [languages.pt-br]
-        languagename = "Português"
-        title = "João Ninguém"
-
-        [languages.pt-br.params]
-            author = "João Ninguém"
-            info = "Full Stack DevOps e Mágico"
-            description = "Sítio pessoal de João Ninguém"
-            keywords = "blog,desenvolvedor,pessoal"
-            footercontent = "Coloque algum texto aqui."
-
-        [languages.pt-br.menu]
-
-            [[languages.pt-br.menu.main]]
-            name = "Sobre"
-            weight = 1
-            url = "/pt-br/about/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Blog"
-            weight = 2
-            url = "/pt-br/posts/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Projetos"
-            weight = 3
-            url = "/pt-br/projects/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Contato"
-            weight = 5
-            url = "/pt-br/contact/"
