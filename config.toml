@@ -1,4 +1,4 @@
-baseurl = "//pokeli.de"
+baseurl = "https://pokeli.de"
 title = "profile"
 
 theme = "hugo-coder"
