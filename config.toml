@@ -54,28 +54,22 @@ disqusShortname = "yourdiscussshortname"
     name = "Github"
     icon = "fab fa-github"
     weight = 1
-    url = "https://github.com/johndoe/"
+    url = "https://github.com/Naskapie/"
 [[params.social]]
     name = "Gitlab"
     icon = "fab fa-gitlab"
     weight = 2
-    url = "https://gitlab.com/johndoe/"
+    url = "https://gitlab.com/Naskapie/"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter"
     weight = 3
-    url = "https://twitter.com/johndoe/"
+    url = "https://twitter.com/hendrikdalagan"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
     weight = 4
-    url = "https://www.linkedin.com/in/johndoe/"
-[[params.social]]
-    name = "Medium"
-    icon = "fab fa-medium"
-    weight = 5
-    url = "https://medium.com/@johndoe"
-
+    url = "https://www.linkedin.com/in/hendrikduerr/"
 
 [languages]
     [languages.en]
@@ -102,9 +96,9 @@ disqusShortname = "yourdiscussshortname"
         url = "/contact/"
 
 
-    [languages.pt-br]
-        languagename = "Português"
-        title = "João Ninguém"
+    [languages.de]
+        languagename = "Deutsch"
+        title = "Hendrik"
 
         [languages.pt-br.params]
             author = "João Ninguém"
