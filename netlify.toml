@@ -6,7 +6,7 @@
     X-Content-Type-Options = "nosniff"
     X-Made-By = "@dalagan"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-    Referrer-Policy = "no-referrer-when-downgrade"
+    Referrer-Policy = "same-origin"
     # Multi-key header rules are expressed with multi-line strings
     Link = '''
     </assets/css/base.css>; rel=preload; as=style, \
