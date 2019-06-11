@@ -7,19 +7,13 @@
     X-Made-By = "@dalagan"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Referrer-Policy = "same-origin"
-    Content-Security-Policy:
-         default-src 'self' blob:;
-    #     script-src  'self' blob: https://d1g3mdmxf8zbo9.cloudfront.net/js/;
-    #     object-src  'self' https://d1g3mdmxf8zbo9.cloudfront.net/images/;
-    #     img-src     'self' data: https://d1g3mdmxf8zbo9.cloudfront.net/images/;
-    #     frame-src   https://d1g3mdmxf8zbo9.cloudfront.net/images/;
-    #     style-src   'self' 'unsafe-inline' https://d1g3mdmxf8zbo9.cloudfront.net/css/;
-    #     font-src    'self' about: data: https://d1g3mdmxf8zbo9.cloudfront.net/fonts/;
-         worker-src  blob:;
-    #     media-src   'self' blob: https://luffy-video.sos-ch-dk-2.exo.io;
-    #     connect-src 'self' https://luffy-video.sos-ch-dk-2.exo.io https://comments.luffy.cx;
-         frame-ancestors 'none';
-         block-all-mixed-content;
+    Content-Security-Policy = """
+        style-src 'self' 'unsafe-inline';
+        frame-ancestors 'none';
+        object-src 'none';
+        base-uri 'none';
+        upgrade-insecure-requests;
+        block-all-mixed-content;
     
     # Multi-key header rules are expressed with multi-line strings
     Link = '''
