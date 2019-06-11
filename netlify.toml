@@ -7,13 +7,13 @@
     X-Made-By = "@dalagan"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Referrer-Policy = "same-origin"
-    Content-Security-Policy = """
-        style-src 'self' 'unsafe-inline';
-        frame-ancestors 'none';
-        object-src 'none';
-        base-uri 'none';
-        upgrade-insecure-requests;
-        block-all-mixed-content;
+    #Content-Security-Policy = """
+        #style-src 'self' 'unsafe-inline';
+        #frame-ancestors 'none';
+        #object-src 'none';
+        #base-uri 'none';
+        #upgrade-insecure-requests;
+        #block-all-mixed-content;
     
     # Multi-key header rules are expressed with multi-line strings
     Link = '''
