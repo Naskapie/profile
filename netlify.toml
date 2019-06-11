@@ -6,7 +6,6 @@
     X-Made-By = "@dalagan"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Referrer-Policy = "no-referrer-when-downgrade"
-    Content-Security-Policy = '''
     default-src 'none' ; 
     font-src 'none' ;
     form-action 'self' ;
