@@ -1,12 +1,35 @@
+# Redirect everything from /s/ for direct linking
+# https://www.netlify.com/docs/redirects/#structured-configuration
+[[redirects]]
+  from   = "/s/*"
+  to     = "/index.html"
+  status = 200
+  force  = true
+
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    X-Content-Type-Options = "nosniff"
-    X-Made-By = "@dalagan"
-    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
     Referrer-Policy = "same-origin"
+
+    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+    # I never intend to show any of the pages on my site in a <frame> on my site
+    # or elsewhere.
+    X-Frame-Options = "DENY"
+
+    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
+    X-Xss-Protection = "1; mode=block"
+
+    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
+    X-Content-Type-Options = "nosniff"
+
+    X-Made-By = "@dalagan"
+    
+    # https://httpsecurityreport.com/best_practice.html#hsts
+    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+    # https://hstspreload.org/
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
     #Content-Security-Policy = """
         #style-src 'self' 'unsafe-inline';
         #frame-ancestors 'none';
@@ -15,16 +38,56 @@
         #upgrade-insecure-requests;
         #block-all-mixed-content;
     
+    
+    
+    
+    # Feature Policy
+    # https://github.com/WICG/feature-policy/blob/master/features.md
+    # https://scotthelme.co.uk/a-new-security-header-feature-policy/
+    # https://developers.google.com/web/updates/2018/06/feature-policy
+
+    # |----------------------+-------------------+--------------------------------------------------------------|
+    # | Feature name         | Default allowlist | Brief Description                                            |
+    # |----------------------+-------------------+--------------------------------------------------------------|
+    # | accelerometer        | self              | Controls access to accelerometer sensors on the device       |
+    # | ambient-light-sensor | self              | Controls access to ambient light sensors on the device       |
+    # | autoplay             | self              | Controls access to autoplay through `play()` and `autoplay`. |
+    # | camera               | self              | Controls access to video input devices.                      |
+    # | encrypted-media      | self              | Controls whether `requestMediaKeySystemAccess()` is allowed. |
+    # | fullscreen           | self              | Controls whether `requestFullscreen()` is allowed.           |
+    # | geolocation          | self              | Controls access to Geolocation interface.                    |
+    # | gyroscope            | self              | Controls access to gyroscope sensors on the device           |
+    # | magnetometer         | self              | Controls access to magnetometer sensors on the device        |
+    # | microphone           | self              | Controls access to audio input devices.                      |
+    # | midi                 | self              | Controls access to `requestMIDIAccess()` method.             |
+    # | payment              | self              | Controls access to PaymentRequest interface.                 |
+    # | picture-in-picture   | *                 | Controls access to Picture in Picture.                       |
+    # | speaker              | self              | Controls access to audio output devices.                     |
+    # | usb                  | self              | Controls access to USB devices.                              |
+    # | vr                   | self              | Controls access to VR displays.                              |
+    # |----------------------+-------------------+--------------------------------------------------------------|
+    Feature-Policy = """
+      accelerometer 'none'
+      ; ambient-light-sensor 'none'
+      ; autoplay 'self'
+      ; camera 'none'
+      ; encrypted-media 'none'
+      ; fullscreen 'self'
+      ; geolocation 'none'
+      ; gyroscope 'none'
+      ; magnetometer 'none'
+      ; microphone 'none'
+      ; midi 'none'
+      ; payment 'none'
+      ; picture-in-picture *
+      ; speaker 'none'
+      ; sync-xhr 'none'
+      ; usb 'none'
+      ; vr 'none'
+    """   
+    
     # Multi-key header rules are expressed with multi-line strings
     Link = '''
     </assets/css/base.css>; rel=preload; as=style, \
     </assets/css/base2.css>; rel=preload; as=style, \
     </assets/css/base3.css>; rel=preload; as=style'''
-    
-# Redirect everything from /s/ for direct linking
-# https://www.netlify.com/docs/redirects/#structured-configuration
-[[redirects]]
-  from   = "/s/*"
-  to     = "/index.html"
-  status = 200
-  force  = true
