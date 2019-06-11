@@ -7,7 +7,12 @@
     X-Made-By = "@dalagan"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Referrer-Policy = "no-referrer-when-downgrade"
-
+    # Multi-key header rules are expressed with multi-line strings
+    Link = '''
+    </assets/css/base.css>; rel=preload; as=style, \
+    </assets/css/base2.css>; rel=preload; as=style, \
+    </assets/css/base3.css>; rel=preload; as=style'''
+    
 # Redirect everything from /s/ for direct linking
 # https://www.netlify.com/docs/redirects/#structured-configuration
 [[redirects]]
