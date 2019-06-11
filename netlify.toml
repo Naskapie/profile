@@ -13,24 +13,6 @@
     upgrade-insecure-requests;
     block-all-mixed-content;
 
-[[headers]]
-  for = "/"
-  [headers.values]
-    # Preload links
-    Link = '''
-    </css/main.css?v=1.0.0>; rel=preload; as=style, 
-    </js/app.js?v=1.0.0>; rel=preload; as=script, 
-    </js/validate-ip.js?v=1.0.0>; rel=preload; as=script'''
-
-[[headers]]
-  for = "/s/*"
-  [headers.values]
-    # Preload links
-    Link = '''
-    </css/main.css?v=1.0.0>; rel=preload; as=style, 
-    </js/app.js?v=1.0.0>; rel=preload; as=script, 
-    </js/validate-ip.js?v=1.0.0>; rel=preload; as=script'''
-
 # Redirect everything from /s/ for direct linking
 # https://www.netlify.com/docs/redirects/#structured-configuration
 [[redirects]]
