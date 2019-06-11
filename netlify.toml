@@ -6,11 +6,6 @@
     X-Made-By = "@dalagan"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Referrer-Policy = "no-referrer-when-downgrade"
-    default-src 'none' ; 
-    font-src 'none' ;
-    form-action 'self' ;
-    upgrade-insecure-requests;
-    block-all-mixed-content;
 
 # Redirect everything from /s/ for direct linking
 # https://www.netlify.com/docs/redirects/#structured-configuration
