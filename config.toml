@@ -19,7 +19,7 @@ disqusShortname = "yourdiscussshortname"
     author = "Hendrik"
     description = "Hendrik's personal website"
     keywords = "blog,developer,personal"
-    info = "Full Stack Dev and Runner"
+    info = "CS Student and Runner"
     avatarurl = "images/avatar.jpg"
     footercontent = "Enter a text here."
 
@@ -98,33 +98,33 @@ disqusShortname = "yourdiscussshortname"
 
     [languages.de]
         languagename = "Deutsch"
-        title = "Hendrik"
+        title = "Profil"
 
-        [languages.pt-br.params]
-            author = "João Ninguém"
-            info = "Full Stack DevOps e Mágico"
+        [languages.de.params]
+            author = "Hendrik Pulst"
+            info = "Programmierer und Läufer"
             description = "Sítio pessoal de João Ninguém"
-            keywords = "blog,desenvolvedor,pessoal"
+            keywords = "blog, project, contact"
             footercontent = "Coloque algum texto aqui."
 
-        [languages.pt-br.menu]
+        [languages.de.menu]
 
-            [[languages.pt-br.menu.main]]
+            [[languages.de.menu.main]]
             name = "Sobre"
             weight = 1
             url = "/pt-br/about/"
 
-            [[languages.pt-br.menu.main]]
+            [[languages.de.main]]
             name = "Blog"
             weight = 2
             url = "/pt-br/posts/"
 
             [[languages.pt-br.menu.main]]
-            name = "Projetos"
+            name = "Projekte"
             weight = 3
             url = "/pt-br/projects/"
 
-            [[languages.pt-br.menu.main]]
-            name = "Contato"
+            [[languages.de.menu.main]]
+            name = "Contact"
             weight = 5
             url = "/pt-br/contact/"
