@@ -21,7 +21,7 @@ disqusShortname = "yourdiscussshortname"
     keywords = "blog,developer,personal"
     info = "CS Student and Runner"
     avatarurl = "images/avatar.jpg"
-    footercontent = "Enter a text here."
+    # footercontent = "Enter a text here."
 
     dateformat = "January 2, 2006"
 
