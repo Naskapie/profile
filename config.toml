@@ -1,5 +1,5 @@
 baseurl = "https://pokeli.de"
-title = "profile"
+title = "HendrikPulst"
 
 theme = "hugo-coder"
 
@@ -12,8 +12,6 @@ canonifyurls = true
 pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-
-disqusShortname = "yourdiscussshortname"
 
 [params]
     author = "Hendrik"
@@ -76,31 +74,31 @@ disqusShortname = "yourdiscussshortname"
         languagename = "English"
 
         [[languages.en.menu.main]]
-        name = "About"
-        weight = 1
-        url = "/about/"
-
-        [[languages.en.menu.main]]
-        name = "Blog"
-        weight = 2
-        url = "/posts/"
-
-        [[languages.en.menu.main]]
         name = "Projects"
         weight = 3
         url = "/projects/"
 
         [[languages.en.menu.main]]
-        name = "Contact me"
+        name = "Blog"
+        weight = 2
+        url = "/posts/"
+                
+        [[languages.en.menu.main]]
+        name = "About"
+        weight = 1
+        url = "/about/"
+
+        [[languages.en.menu.main]]
+        name = "Contact"
         weight = 5
         url = "/contact/"
 
 
     [languages.de]
         languagename = "Deutsch"
-        title = "Profil"
+        title = "HendrikPulst"
 
-        [languages.de.params]
+        [languages.de.menu.main]
             author = "Hendrik"
             info = "Programmierer und Läufer"
             description = "Sítio pessoal de João Ninguém"
@@ -110,19 +108,19 @@ disqusShortname = "yourdiscussshortname"
         [languages.de.menu]
 
             [[languages.de.menu.main]]
-            name = "Über"
-            weight = 1
-            url = "/de/about/"
-
+            name = "Projekte"
+            weight = 3
+            url = "/de/projects/"
+            
             [[languages.de.menu.main]]
             name = "Blog"
             weight = 2
             url = "/de/posts/"
-
+            
             [[languages.de.menu.main]]
-            name = "Projekte"
-            weight = 3
-            url = "/de/projects/"
+            name = "Über"
+            weight = 1
+            url = "/de/about/"
 
             [[languages.de.menu.main]]
             name = "Kontakt"
