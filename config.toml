@@ -98,7 +98,7 @@ pygmentscodefencesguesssyntax = true
         languagename = "Deutsch"
         title = "HendrikPulst"
 
-        [languages.de.menu.main]
+        [languages.de.params]
             author = "Hendrik"
             info = "Programmierer und Läufer"
             description = "Sítio pessoal de João Ninguém"
