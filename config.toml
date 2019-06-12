@@ -75,7 +75,7 @@ pygmentscodefencesguesssyntax = true
 
         [[languages.en.menu.main]]
         name = "Projects"
-        weight = 3
+        weight = 1
         url = "/projects/"
 
         [[languages.en.menu.main]]
@@ -85,12 +85,12 @@ pygmentscodefencesguesssyntax = true
                 
         [[languages.en.menu.main]]
         name = "About"
-        weight = 1
+        weight = 3
         url = "/about/"
 
         [[languages.en.menu.main]]
         name = "Contact"
-        weight = 5
+        weight = 4
         url = "/contact/"
 
 
@@ -109,7 +109,7 @@ pygmentscodefencesguesssyntax = true
 
             [[languages.de.menu.main]]
             name = "Projekte"
-            weight = 3
+            weight = 1
             url = "/de/projects/"
             
             [[languages.de.menu.main]]
@@ -119,10 +119,10 @@ pygmentscodefencesguesssyntax = true
             
             [[languages.de.menu.main]]
             name = "Über"
-            weight = 1
+            weight = 3
             url = "/de/about/"
 
             [[languages.de.menu.main]]
             name = "Kontakt"
-            weight = 5
+            weight = 4
             url = "/de/contact/"
