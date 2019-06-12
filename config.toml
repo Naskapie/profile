@@ -101,30 +101,30 @@ disqusShortname = "yourdiscussshortname"
         title = "Profil"
 
         [languages.de.params]
-            author = "Hendrik Pulst"
+            author = "Hendrik"
             info = "Programmierer und Läufer"
             description = "Sítio pessoal de João Ninguém"
             keywords = "blog, project, contact"
-            footercontent = "Coloque algum texto aqui."
+            # footercontent = "Coloque algum texto aqui."
 
         [languages.de.menu]
 
             [[languages.de.menu.main]]
-            name = "Hugo"
+            name = "Über"
             weight = 1
-            url = "/pt-br/about/"
+            url = "/de/about/"
 
             [[languages.de.menu.main]]
             name = "Blog"
             weight = 2
-            url = "/pt-br/posts/"
+            url = "/de/posts/"
 
             [[languages.de.menu.main]]
             name = "Projekte"
             weight = 3
-            url = "/pt-br/projects/"
+            url = "/de/projects/"
 
             [[languages.de.menu.main]]
             name = "Kontakt"
             weight = 5
-            url = "/pt-br/contact/"
+            url = "/de/contact/"
