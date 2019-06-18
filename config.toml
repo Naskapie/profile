@@ -17,7 +17,7 @@ pygmentscodefencesguesssyntax = true
     author = "Hendrik"
     description = "Hendrik's personal website"
     keywords = "blog,developer,personal"
-    info = "CS Student and Runner"
+    info = "I'm very excited about Flutter."
     avatarurl = "images/avatar.jpg"
     # footercontent = "Enter a text here."
 
